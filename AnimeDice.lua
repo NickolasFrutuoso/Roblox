@@ -15,7 +15,7 @@ if getgenv().AnimeDiceRuntime and getgenv().AnimeDiceRuntime.Unload then
 end
 
 local Runtime = {
-    connections = {}, running = true, history = {}, controls = {},
+    connections = {}, running = true, unloaded = false, history = {}, controls = {},
     nativeTowerLoop = false, towerStartPending = false,
     towerStatus = "Ready", sellStatus = "Waiting for full inventory",
     graphicsOriginal = {}, globalShadowsOriginal = nil,
@@ -668,7 +668,7 @@ task.spawn(function()
     end
 end)
 
-local MacLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/NickolasFrutuoso/Roblox-Script/refs/heads/main/NrHUB-UI.lua"))()
+local MacLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/NickolasFrutuoso/Roblox/refs/heads/main/NrHUB-UI.lua"))()
 pcall(function() MacLib:SetFolder(CONFIG_FOLDER) end)
 local camera = workspace.CurrentCamera
 local viewport = camera and camera.ViewportSize or Vector2.new(900, 650)
