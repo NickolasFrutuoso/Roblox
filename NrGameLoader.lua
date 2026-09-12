@@ -8,7 +8,7 @@ local MarketplaceService = game:GetService("MarketplaceService")
 local LocalPlayer = Players.LocalPlayer
 
 local LOADER_VERSION = "1.0.0"
-local GITHUB_RAW_BASE = "https://raw.githubusercontent.com/NickolasFrutuoso/Roblox/new/main"
+local GITHUB_RAW_BASE = "https://raw.githubusercontent.com/NickolasFrutuoso/Roblox/refs/heads/main/AnimeDice.lua"
 
 local SUPPORTED_GAMES = {
     -- Anime Dice
