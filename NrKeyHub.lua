@@ -11,13 +11,13 @@ local LocalPlayer = Players.LocalPlayer
 
 local CONFIG = {
     HubName = "Nr HUB",
-    GameName = "Nr HUB",
+    GameName = "Key System",
     GetKeyUrl = "https://work.ink/2XEh/key-system", -- Work.ink generated link
     -- Safer option: create the Worker in workink-verify-worker.js and set VERIFY_URL to it.
     VerifyUrl = nil, -- e.g. "https://your-worker.your-subdomain.workers.dev/verify?token="
     UsePublicWorkInkValidation = true, -- fallback: https://work.ink/_api/v2/token/isValid/{TOKEN}
     DeleteTokenOnUse = false,
-    MainScriptUrl = "https://raw.githubusercontent.com/NickolasFrutuoso/Roblox/new/main/NrGameLoader.lua", -- runs the game detector/loader after key validation
+    MainScriptUrl = "https://raw.githubusercontent.com/NickolasFrutuoso/Roblox-Script/refs/heads/main/NrGameLoader.lua", -- runs the game detector/loader after key validation
     AutoSaveToken = true,
     AutoValidateSavedToken = true,
 }
@@ -236,7 +236,7 @@ cardTitle.Parent = card
 local cardSub = Instance.new("TextLabel")
 cardSub.BackgroundTransparency = 1
 cardSub.Font = Enum.Font.GothamMedium
-cardSub.Text = CONFIG.GameName .. " Access"
+cardSub.Text = CONFIG.GameName
 cardSub.TextColor3 = Color3.fromRGB(150,150,150)
 cardSub.TextSize = 13
 cardSub.Position = UDim2.fromOffset(0, 28)
