@@ -17,7 +17,7 @@ local CONFIG = {
     VerifyUrl = nil, -- e.g. "https://your-worker.your-subdomain.workers.dev/verify?token="
     UsePublicWorkInkValidation = true, -- fallback: https://work.ink/_api/v2/token/isValid/{TOKEN}
     DeleteTokenOnUse = false,
-    MainScriptUrl = "https://raw.githubusercontent.com/NickolasFrutuoso/NickolasFrutuoso/Roblox/edit/main/NrGameLoader.lua", -- runs the game detector/loader after key validation
+    MainScriptUrl = "https://raw.githubusercontent.com/NickolasFrutuoso/Roblox/refs/heads/main/NrGameLoader.lua", -- runs the game detector/loader after key validation
     AutoSaveToken = true,
     AutoValidateSavedToken = true,
 }
